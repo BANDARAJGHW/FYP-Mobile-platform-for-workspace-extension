@@ -87,40 +87,36 @@ Resources:
 			Temperature 8x Sensor wiring - Multiplexer 
 
 
-----------------------------
-Refactor code into functions 
-
-Part A
-	(2.1 , 2.2)
-	1. Check HowToMechatronics code again 
-		What are the inputs that he gets from Bluetooth 
-			wheelSpeed , direction (?)
-
-		Add any missing readings to your code 
-	
-	(2.3)
-	2. Modify code so that it is controllable from Serial commands
-		Command format
-			D100, (2 letters, 3 numbers)
-			A350
-		Command parsing 
-
-Part B  
-
-	(3.1)
-	2. Measure battery voltage 						--
-		Check compatibility with 12V battery 
-
-	3. Current (?)								--
-
-	4. Purchasing sensor electronics 					--
-		Find AliExpress links (Star rating , How many purchases )
-		Send links to supervisor 
-
 ---------------------------
 After 25th 
+
+Maintain Google Sheet 
+	- Purchase items status :
+
+Part A
+	(2.1, 2.2)
+		Implement HTM's circuit on Wokwi. Replace Arduino with ESP32
+
+		Bluetooth only implementation . Extend to serial port. 
+
+	(2.3) [Will do on Wednesday - 8 th after finalizing wokwi model]
+		Test functionality for parsing & reacting to 
+			Parsing : 
+				Detecting which command 
+			Reacting : 
+				Setting variables  		
+
+Part B 
+	(3.1)
+		Upload image of circuit & code - I'll give feedback after reviewing it 
+
+	
 	(3.2 3.3)
+	0. Setup Arduino IoT cloud account, dashboard, credentials, device
+		Tutorial : https://docs.arduino.cc/arduino-cloud/guides/overview/
 	1. Send data over to cloud plotter
-		Arduino IoT cloud - How to send data 
+		Arduino IoT cloud - At least send a random value to Arduino iot cloud
+
+
 
 
